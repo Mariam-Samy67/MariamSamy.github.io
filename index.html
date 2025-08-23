@@ -1,42 +1,101 @@
-Welcome to my professional portfolio! Here you can explore my projects, skills, and professional journey in software testing and development.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mariam Samy | Software Tester Portfolio</title>
+  <meta name="description" content="Portfolio of Mariam Samy — Software Tester with Java & Python skills. Projects, skills, and contact info." />
+  <link rel="icon" href="data:," />
 
-## 💻 About Me
-I am a motivated and detail-oriented Software Tester with strong programming skills in Java and Python. I recently graduated from the Faculty of Commerce, Beni-Suef University (Accounting), and I am passionate about ensuring software quality, performing thorough testing, and learning the latest technologies in software development and automation.
+  <style>
+    /* ====== Base & Theming ====== */
+    :root{
+      --bg: #0f1320;
+      --bg-soft: #141a2a;
+      --text: #e7e9f1;
+      --muted: #a9b1c7;
+      --primary: #7c9bff;
+      --primary-2: #5a7dff;
+      --card: #171d2f;
+      --accent: #00d1b2;
+      --shadow: 0 8px 30px rgba(0,0,0,.25);
+      --radius: 14px;
+      --maxw: 1100px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg: #f7f8fc;
+        --bg-soft:#ffffff;
+        --text:#10121a;
+        --muted:#4f566b;
+        --primary:#3b5bfd;
+        --primary-2:#2e4ae6;
+        --card:#ffffff;
+        --accent:#06b6d4;
+        --shadow:0 8px 30px rgba(16,18,26,.08);
+      }
+    }
+    [data-theme="light"]{
+      --bg: #f7f8fc; --bg-soft:#ffffff; --text:#10121a; --muted:#4f566b;
+      --primary:#3b5bfd; --primary-2:#2e4ae6; --card:#ffffff; --accent:#06b6d4;
+      --shadow:0 8px 30px rgba(16,18,26,.08);
+    }
+    [data-theme="dark"]{
+      --bg: #0f1320; --bg-soft:#141a2a; --text:#e7e9f1; --muted:#a9b1c7;
+      --primary:#7c9bff; --primary-2:#5a7dff; --card:#171d2f; --accent:#00d1b2;
+      --shadow:0 8px 30px rgba(0,0,0,.25);
+    }
 
-Key Highlights:
-- Experienced in manual and automated software testing principles.
-- Strong programming skills in Java and Python.
-- Passionate about improving software quality and user experience.
-- Quick learner with a problem-solving mindset.
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      background: var(--bg); color: var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--primary); text-decoration:none}
+    a:hover{color:var(--primary-2)}
+    .container{max-width:var(--maxw); margin:auto; padding:0 20px}
 
-## 🛠 Skills
-- Programming Languages: Java, Python  
-- Testing & QA: Manual Testing, Test Case Design, Bug Reporting, Automation Basics  
-- Tools & Platforms: GitHub, VS Code, Postman, Selenium (Basics)  
-- Soft Skills: Analytical Thinking, Attention to Detail, Time Management
+    /* ====== Navbar ====== */
+    .nav{
+      position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(10px);
+      background: color-mix(in hsl, var(--bg-soft) 85%, transparent);
+      border-bottom:1px solid color-mix(in hsl, var(--text) 10%, transparent);
+    }
+    .nav .row{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .brand{font-weight:700; letter-spacing:.3px}
+    .nav a{margin:0 10px; font-weight:600}
+    .navlinks{display:flex; align-items:center; gap:10px}
+    .menu-btn{display:none; border:1px solid color-mix(in hsl, var(--text) 20%, transparent);
+      background:transparent; color:var(--text); padding:8px 10px; border-radius:10px}
+    .theme-btn{border:1px solid color-mix(in hsl, var(--text) 20%, transparent);
+      background:transparent; color:var(--text); padding:8px 10px; border-radius:10px; margin-left:6px}
 
-## 🌐 Live Portfolio
-Check out my live portfolio on GitHub Pages: [MariamSamy.github.io](https://MariamSamy.github.io/)
+    @media (max-width: 820px){
+      .menu-btn{display:inline-block}
+      .navlinks{position:fixed; inset:64px 0 auto 0; background:var(--bg-soft);
+        display:none; flex-direction:column; padding:16px; border-bottom:1px solid rgba(255,255,255,.06)}
+      .navlinks.open{display:flex}
+    }
 
-## 📂 Projects
-
-1. [Flight Reservation System (Java)](https://github.com/Mariam-Samy67/FlightReservationSystem-)
-   - Description: A console-based flight booking system in Java. Allows users to view seat maps, book seats with validation, and prevents double booking.  
-   - Key Concepts: 2D arrays, nested loops, encapsulation, LocalDate/DateTimeFormatter, input validation, command-line interaction.
-
-2. [Software Testing Estimation Tool (Java)](https://github.com/Mariam-Samy67/SoftwareTestingEstimationTool)
-   - Description: A Java application demonstrating four popular software testing estimation techniques: Percentage-based Estimation, Expert Judgment, Wideband Delphi, and Three-Point Estimation. Helps testers and project managers estimate testing efforts efficiently.  
-   - Key Concepts: Estimation methods, project effort calculation, Java console interaction.
-
-3. [Rock Paper Scissors Game (Python)](https://github.com/Mariam-Samy67/rock-paper-scissors-by-mariam)
-   - Description: A simple Rock-Paper-Scissors game built in Python. Players compete against the computer in this classic game.  
-   - Key Concepts: Python programming, user interaction, basic game logic, randomization.
-
-## 📬 Contact Me
-- Email: [mariamsamy969@gmail.com](mailto:mariamsamy969@gmail.com)  
-- LinkedIn: [Mariam Samy](http://linkedin.com/in/mariam-samy-618207277)  
-- GitHub: [Mariam-Samy67](https://github.com/Mariam-Samy67)
-
----
-
-*Thank you for visiting my portfolio! I am always open to collaborations, internships, and opportunities to contribute to meaningful projects.*
+    /* ====== Hero ====== */
+    .hero{
+      padding:96px 0 48px; text-align:center; position:relative; overflow:hidden;
+    }
+    .hero h1{font-size: clamp(28px, 5vw, 48px); margin:0 0 10px}
+    .hero p{color:var(--muted); margin:0 auto 22px; max-width:720px}
+    .tags{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:10px}
+    .tag{
+      background:linear-gradient(135deg, color-mix(in hsl, var(--primary) 30%, transparent), transparent);
+      border:1px solid color-mix(in hsl, var(--primary) 50%, transparent);
+      padding:6px 10px; border-radius:999px; font-size:.9rem
+    }
+    .cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      padding:12px 18px; border-radius:12px; font-weight:700; border:none; cursor:pointer;
+      box-shadow: var(--shadow);
+    }
+    .btn-primary{background:var(--primary); color:#fff}
+    .btn-primary:hover{background:var(--primary-2)}
+    .
