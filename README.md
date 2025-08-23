@@ -35,7 +35,7 @@ Check out my live portfolio on GitHub Pages: [MariamSamy.github.io](https://Mari
 ## 📬 Contact Me
 - Email: [mariamsamy969@gmail.com](mailto:mariamsamy969@gmail.com)  
 - LinkedIn: [Mariam Samy](http://linkedin.com/in/mariam-samy-618207277)  
-- GitHub: [Mariam-Samy67](https://github.com/Mariam-Samy67)
+- GitHub: [Mariam-Samy67](https://MariamSamyHanna.github.io)
 
 ---
 
